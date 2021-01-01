@@ -13,6 +13,9 @@
 	index.html
 	main.css
 	main.js
+
+![ScreenShot](calendar3.jpg)
+![ScreenShot](calendar1.jpg)
 	
 
 
