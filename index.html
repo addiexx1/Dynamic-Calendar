@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calendar Scheduler</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="calendar">
+      <div class="month">
+        <i class="fas fa-angle-left prev"></i>
+        <div class="monthYear">
+          <h1></h1>
+          <p></p>
+        </div>
+        <i class="fas fa-angle-right next"></i>
+      </div>
+      <div class="weekdays">
+        <div>Sun</div>
+        <div>Mon</div>
+        <div>Tue</div>
+        <div>Wed</div>
+        <div>Thu</div>
+        <div>Fri</div>
+        <div>Sat</div>
+      </div>
+      <div class="days"></div>
+    </div>
+
+    <div class="scheduler">
+      <div class="showEvent">
+        <div class="eventList">
+        </div>
+      </div>
+
+      <div id="inputContainer" style="display:none;">
+        <div id="dateDisplay"></div>
+        <label for="eventTime">Event Time: </label>
+        <input type="time" id="eventTimeStart" name="eventTimeStart"> to <input type="time" id="eventTimeEnd"
+          name="eventTimeEnd">
+        <br>
+        <label for="descTxt">Description:</label>
+        <input type="text" id="descTxt">
+        <br>
+        <input class = "button" type="button" value="Add" onclick="addEventTxt()">
+        <input class = "button" type="button" value="Done" onclick="doneEvent()">
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>
